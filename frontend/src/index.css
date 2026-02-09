@@ -24,3 +24,9 @@ code {
 #supportHero a{
   color: white;
 }
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
