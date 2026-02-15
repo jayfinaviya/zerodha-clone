@@ -59,6 +59,22 @@ const WatchListItem = ({ stock }) => {
           <span className="price">{stock.price}</span>
         </div>
       </div>
+      {showWatchlistActions && <WatchListActions uid={stock.name} />}
     </li>
   );
 };
+
+const WatchListActions = ({ uid }) => {
+     return (
+    <span className="actions">
+      <span>
+        <Tooltip
+          title="Buy (B)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+          onClick={handleBuyClick}
+        >
+          <button className="buy">Buy</button>
+        </Tooltip>
+}
