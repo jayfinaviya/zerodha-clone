@@ -84,6 +84,16 @@ const WatchListActions = ({ uid }) => {
         >
           <button className="sell">Sell</button>
         </Tooltip>
+        <Tooltip
+          title="Analytics (A)"
+          placement="top"
+          arrow
+          TransitionComponent={Grow}
+        >
+          <button className="action">
+            <BarChartOutlined className="icon" />
+          </button>
+        </Tooltip>
       </span>
     </span>
     )
