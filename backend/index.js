@@ -182,6 +182,13 @@ const app = express();
 //   res.send("Done!");
 // });
 
+app.get("/allHoldings", async (req, res) => {
+  let allHoldings = await HoldingsModel.find({});
+  res.json(allHoldings);
+});
+
+
+
 app.listen(PORT,()=>{
     console.log("App started");
     mongoose.connect(uri);
