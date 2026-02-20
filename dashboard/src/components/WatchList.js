@@ -68,7 +68,7 @@ const WatchListItem = ({ stock }) => {
 };
 
 const WatchListActions = ({ uid }) => {
-   
+   const generalContext = useContext(GeneralContext);
 
   const handleBuyClick = () => {
     generalContext.openBuyWindow(uid);
