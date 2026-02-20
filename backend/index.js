@@ -210,7 +210,7 @@ app.post("/newOrder", async (req, res) => {
 
   newOrder.save();
 
-  res.send("Order saved!");
+  
 });
 
 app.listen(PORT,()=>{
